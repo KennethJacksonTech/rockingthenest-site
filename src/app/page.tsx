@@ -1,65 +1,127 @@
-import Image from "next/image";
+import Link from "next/link";
+import { posts } from "@/data/posts";
+import PostCard from "@/components/PostCard";
+
+const categories = [
+  { label: "Travel", slug: "travel" },
+  { label: "Disney", slug: "disney" },
+  { label: "Beach", slug: "beach" },
+  { label: "Running", slug: "running" },
+  { label: "Family", slug: "family" },
+];
 
 export default function Home() {
+  const latestPosts = posts.slice(0, 3);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      {/* Hero */}
+      <section className="relative min-h-[70vh] flex items-center justify-center">
+        <div
+          className="absolute inset-0"
+          style={{ background: "var(--gradient-hero)" }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+        <div className="absolute inset-0 bg-black/30" />
+        <img
+          src="/images/brad-maggie-st-kitts-.jpg"
+          alt="Maggie and Brad"
+          className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40"
+        />
+        <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+          <p className="text-accent-secondary uppercase tracking-[0.1em] text-[0.875rem] font-body font-semibold mb-4">
+            ADVENTURES IN EMPTY NESTING
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h1 className="font-heading font-bold text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-[-0.02em] text-text-light mb-4">
+            Getting older is inevitable — being old is not!
+          </h1>
+          <p className="text-text-light/80 text-lg font-body leading-[1.7] mb-8">
+            Travel, Disney, Concerts &amp; Life After the Kids
+          </p>
+          <Link
+            href="/blog"
+            className="inline-block bg-accent-primary text-text-light font-heading font-semibold text-[0.9375rem] uppercase tracking-[0.05em] rounded-md px-7 py-3 hover:brightness-90 hover:scale-[1.02] transition-all"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            Read the Blog
+          </Link>
+        </div>
+      </section>
+
+      {/* Latest Posts */}
+      <section className="bg-surface-primary py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-heading font-semibold text-[2rem] leading-[1.3] text-text-primary text-center mb-10">
+            Latest Adventures
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {latestPosts.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/blog"
+              className="text-accent-primary font-body font-semibold hover:underline"
+            >
+              View All Posts &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Teaser */}
+      <section className="bg-surface-secondary py-16 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="font-heading font-semibold text-[2rem] leading-[1.3] text-text-primary mb-4">
+              Meet Maggie &amp; Brad
+            </h2>
+            <p className="text-text-primary/80 font-body leading-[1.7] mb-4">
+              The story of Rocking The Nest started in 2014 when we realized we
+              would be free in two years. Our youngest was going to graduate from
+              high school and we would be childless for the first time in 30 plus
+              years! A plan was made to sell the big house on 6 acres and start
+              planning the next phase of our lives!
+            </p>
+            <p className="text-text-primary/80 font-body leading-[1.7] mb-6">
+              We decided these are not the days to take it easy – these are the
+              days to let go, have fun, and fulfill dreams!
+            </p>
+            <Link
+              href="/about"
+              className="inline-block border-2 border-accent-primary text-accent-primary font-heading font-semibold text-[0.9375rem] uppercase tracking-[0.05em] rounded-md px-7 py-3 hover:bg-accent-primary hover:text-text-light transition-all"
+            >
+              Our Story
+            </Link>
+          </div>
+          <div>
+            <img
+              src="/images/brad-maggie-st-kitts-.jpg"
+              alt="Maggie and Brad in St. Kitts"
+              className="rounded-lg w-full object-cover shadow-lg"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Categories */}
+      <section className="bg-surface-primary py-16 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="font-heading font-semibold text-[2rem] leading-[1.3] text-text-primary mb-8">
+            Explore By Topic
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/blog?category=${cat.slug}`}
+                className="bg-accent-secondary text-text-light rounded-full px-5 py-2 font-body font-semibold text-sm hover:brightness-90 transition-all"
+              >
+                {cat.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
