@@ -1,0 +1,2547 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "YvtsA",
+      "x": 900,
+      "y": 0,
+      "name": "NavBar",
+      "reusable": true,
+      "width": 1440,
+      "height": 64,
+      "fill": "$surface-inverse",
+      "padding": [
+        0,
+        48
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "PgMJ0",
+          "name": "logo",
+          "fill": "$text-light",
+          "content": "Rocking The Nest",
+          "fontFamily": "Josefin Sans",
+          "fontSize": 20,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "MmCYr",
+          "name": "navLinks",
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "l1DnB",
+              "name": "linkHome",
+              "opacity": 0.8,
+              "fill": "$text-light",
+              "content": "HOME",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 15,
+              "fontWeight": "600",
+              "letterSpacing": 0.03
+            },
+            {
+              "type": "text",
+              "id": "ZOrLi",
+              "name": "linkBlog",
+              "opacity": 0.8,
+              "fill": "$text-light",
+              "content": "BLOG",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 15,
+              "fontWeight": "600",
+              "letterSpacing": 0.03
+            },
+            {
+              "type": "text",
+              "id": "Edtu2",
+              "name": "linkAbout",
+              "opacity": 0.8,
+              "fill": "$text-light",
+              "content": "ABOUT",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 15,
+              "fontWeight": "600",
+              "letterSpacing": 0.03
+            },
+            {
+              "type": "text",
+              "id": "zLwZw",
+              "name": "linkContact",
+              "opacity": 0.8,
+              "fill": "$text-light",
+              "content": "CONTACT",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 15,
+              "fontWeight": "600",
+              "letterSpacing": 0.03
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Br3fq",
+      "x": 900,
+      "y": 180,
+      "name": "Footer",
+      "reusable": true,
+      "width": 1440,
+      "fill": "$surface-inverse",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        40,
+        48,
+        24,
+        48
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "OTv8N",
+          "name": "footerTop",
+          "width": "fill_container",
+          "gap": 24,
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "bsTsZ",
+              "name": "footerLeft",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cNqVr",
+                  "name": "footerBrand",
+                  "fill": "$text-light",
+                  "content": "Rocking The Nest",
+                  "fontFamily": "Josefin Sans",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "sGlYs",
+                  "name": "footerTagline",
+                  "fill": "$text-muted",
+                  "content": "Adventures in Empty Nesting",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Q0Jaw",
+              "name": "footerCenter",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qyS2U",
+                  "name": "fl1",
+                  "opacity": 0.8,
+                  "fill": "$text-light",
+                  "content": "Home",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "sv8wF",
+                  "name": "fl2",
+                  "opacity": 0.8,
+                  "fill": "$text-light",
+                  "content": "Blog",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "wfBP5",
+                  "name": "fl3",
+                  "opacity": 0.8,
+                  "fill": "$text-light",
+                  "content": "About",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "KFUzj",
+                  "name": "fl4",
+                  "opacity": 0.8,
+                  "fill": "$text-light",
+                  "content": "Contact",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l76co",
+              "name": "footerRight",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b1kCA",
+                  "name": "email1",
+                  "fill": "$accent-secondary",
+                  "content": "maggie@rockingthenest.com",
+                  "fontFamily": "Nunito",
+                  "fontSize": 13
+                },
+                {
+                  "type": "text",
+                  "id": "ctSVZ",
+                  "name": "email2",
+                  "fill": "$accent-secondary",
+                  "content": "brad@rockingthenest.com",
+                  "fontFamily": "Nunito",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WannU",
+          "name": "footerBottom",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "I5YUI",
+              "name": "footerCredit",
+              "fill": "$text-muted",
+              "content": "Made in Amarillo, Texas by KennethJackson.Tech",
+              "fontFamily": "Nunito",
+              "fontSize": 12
+            },
+            {
+              "type": "text",
+              "id": "ulsuS",
+              "name": "footerCopy",
+              "fill": "$text-muted",
+              "content": "© 2024 Rocking The Nest",
+              "fontFamily": "Nunito",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "33ZA0",
+      "x": 900,
+      "y": 500,
+      "name": "CategoryPill",
+      "reusable": true,
+      "fill": "$accent-secondary",
+      "cornerRadius": 100,
+      "padding": [
+        6,
+        16
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "EqojJ",
+          "name": "pillLabel",
+          "fill": "$text-light",
+          "content": "Travel",
+          "fontFamily": "Nunito",
+          "fontSize": 13,
+          "fontWeight": "600",
+          "letterSpacing": 0.02
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Dd2ml",
+      "x": 900,
+      "y": 580,
+      "name": "PostCard",
+      "reusable": true,
+      "width": 420,
+      "fill": "$surface-primary",
+      "cornerRadius": 12,
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#2C3E3A1A",
+        "offset": {
+          "x": 0,
+          "y": 4
+        },
+        "blur": 16
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "2Yww2",
+          "name": "cardImage",
+          "clip": true,
+          "width": "fill_container",
+          "height": 240,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$accent-secondary",
+                "position": 0
+              },
+              {
+                "color": "$surface-inverse",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": [
+            12,
+            12,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LLHOl",
+          "name": "cardBody",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "S4dXF",
+              "name": "cardPills",
+              "gap": 8,
+              "children": [
+                {
+                  "id": "rK2cJ",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "cardPill1",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "id": "i2ALi",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "cardPill2",
+                  "x": 77,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Disney"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Ukdcc",
+              "name": "cardTitle",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Disney Wonder Very Merrytime Family Cruise",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "pJGuR",
+              "name": "cardDate",
+              "fill": "$text-muted",
+              "content": "December 15, 2017",
+              "fontFamily": "Nunito",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 0.02
+            },
+            {
+              "type": "text",
+              "id": "TtHlt",
+              "name": "cardExcerpt",
+              "fill": "$text-primary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "This Disney Wonder Very Merrytime Family cruise had been a dream of ours for six years...",
+              "lineHeight": 1.6,
+              "fontFamily": "Nunito",
+              "fontSize": 15
+            },
+            {
+              "type": "text",
+              "id": "3nYFx",
+              "name": "cardLink",
+              "fill": "$accent-primary",
+              "content": "Read More →",
+              "fontFamily": "Nunito",
+              "fontSize": 15,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Ez1kS",
+      "x": 0,
+      "y": 1275,
+      "name": "Home",
+      "width": 1440,
+      "fill": "$surface-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "GWTDe",
+          "type": "ref",
+          "ref": "YvtsA",
+          "name": "homeNav",
+          "x": 0
+        },
+        {
+          "type": "frame",
+          "id": "XTQ34",
+          "name": "heroSection",
+          "width": "fill_container",
+          "height": 560,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1B4D5C",
+                "position": 0
+              },
+              {
+                "color": "#164350",
+                "position": 0.6
+              },
+              {
+                "color": "#0F2F3A",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Mfp8s",
+              "name": "heroEyebrow",
+              "fill": "$accent-secondary",
+              "content": "ADVENTURES IN EMPTY NESTING",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 0.1
+            },
+            {
+              "type": "text",
+              "id": "InRWD",
+              "name": "heroHeadline",
+              "fill": "$text-light",
+              "content": "Getting older is inevitable —\nbeing old is not!",
+              "lineHeight": 1.1,
+              "textAlign": "center",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 56,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "7uZzq",
+              "name": "heroSubtitle",
+              "opacity": 0.8,
+              "fill": "$text-light",
+              "content": "Travel, Disney, Concerts & Life After the Kids",
+              "fontFamily": "Nunito",
+              "fontSize": 18
+            },
+            {
+              "type": "frame",
+              "id": "e0Dd9",
+              "name": "heroCTA",
+              "fill": "$accent-primary",
+              "cornerRadius": 6,
+              "padding": [
+                14,
+                32
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j0qe8",
+                  "name": "ctaText",
+                  "fill": "$text-light",
+                  "content": "READ THE BLOG",
+                  "fontFamily": "Josefin Sans",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.05
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3uk7g",
+          "name": "latestPosts",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            64,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "OyJwt",
+              "name": "postsTitle",
+              "fill": "$text-primary",
+              "content": "Latest Adventures",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 32,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "wciqq",
+              "name": "postsGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "7NcDd",
+                  "type": "ref",
+                  "ref": "Dd2ml",
+                  "width": "fill_container",
+                  "name": "card1",
+                  "height": "fit_content",
+                  "x": 5.684341886080802e-14,
+                  "y": 0,
+                  "descendants": {
+                    "2Yww2": {
+                      "width": "fill_container"
+                    },
+                    "LLHOl": {
+                      "width": "fill_container",
+                      "height": "fit_content"
+                    },
+                    "rK2cJ/EqojJ": {
+                      "content": "Beach"
+                    },
+                    "i2ALi/EqojJ": {
+                      "content": "Florida"
+                    },
+                    "Ukdcc": {
+                      "width": "fill_container",
+                      "content": "I Heart Mexico Beach"
+                    },
+                    "pJGuR": {
+                      "y": 98,
+                      "content": "October 14, 2018"
+                    },
+                    "TtHlt": {
+                      "width": "fill_container",
+                      "y": 128,
+                      "content": "October 5, 2017, we pulled out of our home in St. Joe Beach for the last time. I cried big baby tears..."
+                    },
+                    "3nYFx": {
+                      "y": 188
+                    }
+                  }
+                },
+                {
+                  "id": "6awvx",
+                  "type": "ref",
+                  "ref": "Dd2ml",
+                  "width": "fill_container",
+                  "name": "card2",
+                  "height": "fit_content",
+                  "x": 437.3333333333333,
+                  "y": 0,
+                  "descendants": {
+                    "2Yww2": {
+                      "width": "fill_container"
+                    },
+                    "LLHOl": {
+                      "width": "fill_container",
+                      "height": "fit_content"
+                    },
+                    "rK2cJ/EqojJ": {
+                      "content": "Travel"
+                    },
+                    "i2ALi/EqojJ": {
+                      "content": "Beach"
+                    },
+                    "Ukdcc": {
+                      "width": "fill_container",
+                      "content": "South Florida Again!"
+                    },
+                    "pJGuR": {
+                      "y": 98,
+                      "content": "September 20, 2018"
+                    },
+                    "TtHlt": {
+                      "width": "fill_container",
+                      "y": 128,
+                      "content": "September is a great time to visit South Florida. The crowds have gone home, the temperature is just right..."
+                    },
+                    "3nYFx": {
+                      "y": 212
+                    }
+                  }
+                },
+                {
+                  "id": "5Zhov",
+                  "type": "ref",
+                  "ref": "Dd2ml",
+                  "width": "fill_container",
+                  "name": "card3",
+                  "x": 874.6666666666667,
+                  "y": 0,
+                  "descendants": {
+                    "2Yww2": {
+                      "width": "fill_container"
+                    },
+                    "LLHOl": {
+                      "width": "fill_container"
+                    },
+                    "rK2cJ/EqojJ": {
+                      "content": "Concerts"
+                    },
+                    "i2ALi/EqojJ": {
+                      "content": "RoadTrip"
+                    },
+                    "Ukdcc": {
+                      "width": "fill_container",
+                      "content": "San Antonio Concert Weekend"
+                    },
+                    "pJGuR": {
+                      "content": "September 5, 2018"
+                    },
+                    "TtHlt": {
+                      "width": "fill_container",
+                      "content": "Do we look excited? Just a little bit! Def Leppard and Journey in the same concert..."
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hiwPH",
+          "name": "aboutTeaser",
+          "width": "fill_container",
+          "fill": "$surface-secondary",
+          "gap": 64,
+          "padding": [
+            64,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "q1e4b",
+              "name": "aboutText",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Wl3IO",
+                  "name": "aboutLabel",
+                  "fill": "$text-primary",
+                  "content": "Meet Maggie & Brad",
+                  "fontFamily": "Josefin Sans",
+                  "fontSize": 32,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "LWtRR",
+                  "name": "aboutDesc",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The story of Rocking The Nest started in 2014 when we realized we would be free in two years. Our youngest was going to graduate from high school, and we would be childless for the first time in 30 plus years! We decided these are not the days to take it easy — these are the days to let go, have fun, and fulfill dreams!",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Nunito",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "75rsQ",
+                  "name": "aboutBtn",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$accent-primary"
+                  },
+                  "padding": [
+                    12,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3d0YQ",
+                      "name": "aboutBtnText",
+                      "fill": "$accent-primary",
+                      "content": "OUR STORY",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.05
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8oxjk",
+              "name": "aboutPhoto",
+              "width": 440,
+              "height": 340,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "$accent-primary",
+                    "position": 0
+                  },
+                  {
+                    "color": "$accent-secondary",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 12
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZNi0W",
+          "name": "categoriesSection",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "1UsGv",
+              "name": "catTitle",
+              "fill": "$text-primary",
+              "content": "Explore By Topic",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 32,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "3u3TI",
+              "name": "catRow",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "RV4p8",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "p1",
+                  "x": 0,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Travel"
+                    }
+                  }
+                },
+                {
+                  "id": "0zY2I",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "p2",
+                  "x": 85,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Disney"
+                    }
+                  }
+                },
+                {
+                  "id": "IRcic",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "p3",
+                  "x": 174,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Beach"
+                    }
+                  }
+                },
+                {
+                  "id": "yOFQ3",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "p4",
+                  "x": 259,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Concerts"
+                    }
+                  }
+                },
+                {
+                  "id": "teoo9",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "p5",
+                  "x": 360,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Running"
+                    }
+                  }
+                },
+                {
+                  "id": "x7yDc",
+                  "type": "ref",
+                  "ref": "33ZA0",
+                  "name": "p6",
+                  "x": 458,
+                  "y": 0,
+                  "descendants": {
+                    "EqojJ": {
+                      "content": "Family"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6vlqZ",
+          "type": "ref",
+          "ref": "Br3fq",
+          "name": "homeFooter",
+          "x": 0,
+          "y": 2013
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "0hdQU",
+      "x": 1540,
+      "y": 1275,
+      "name": "Blog Page",
+      "width": 1440,
+      "height": 2800,
+      "fill": "$surface-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "eUb8H",
+          "type": "ref",
+          "ref": "YvtsA",
+          "name": "blogNav",
+          "x": 0
+        },
+        {
+          "type": "frame",
+          "id": "JFVwQ",
+          "name": "blogHero",
+          "width": "fill_container",
+          "fill": "$surface-inverse",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            60,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "kwOWG",
+              "name": "heroTitle",
+              "fill": "$text-light",
+              "content": "THE BLOG",
+              "textAlign": "center",
+              "fontFamily": "Playfair Display",
+              "fontSize": 42,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "cNA6G",
+              "name": "heroSub",
+              "fill": "$accent-secondary",
+              "content": "Stories from the empty nest — travel, Disney, beaches, and everything in between.",
+              "textAlign": "center",
+              "fontFamily": "Lato",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "w2rVO",
+          "name": "filterBar",
+          "width": "fill_container",
+          "fill": "$surface-secondary",
+          "gap": 12,
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vqSPN",
+              "name": "fAll",
+              "fill": "$accent-primary",
+              "cornerRadius": 20,
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JhtwO",
+                  "name": "fAllText",
+                  "fill": "$text-light",
+                  "content": "All",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pcMEz",
+              "name": "fTravel",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tRUcG",
+                  "name": "fTravelText",
+                  "fill": "$text-primary",
+                  "content": "Travel",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XTppv",
+              "name": "fDisney",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "njNK4",
+                  "name": "fDisneyText",
+                  "fill": "$text-primary",
+                  "content": "Disney",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ubgCD",
+              "name": "fBeach",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6iTPA",
+                  "name": "fBeachText",
+                  "fill": "$text-primary",
+                  "content": "Beach",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R6pCK",
+              "name": "fConcerts",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "46TQI",
+                  "name": "fConcertsText",
+                  "fill": "$text-primary",
+                  "content": "Concerts",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3Hwl5",
+              "name": "fRunning",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KMUXt",
+                  "name": "fRunningText",
+                  "fill": "$text-primary",
+                  "content": "Running",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NLbhx",
+              "name": "fFamily",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WiDBF",
+                  "name": "fFamilyText",
+                  "fill": "$text-primary",
+                  "content": "Family",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3khGd",
+              "name": "fCruising",
+              "fill": "$surface-primary",
+              "cornerRadius": 20,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border-light"
+              },
+              "padding": [
+                8,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P6AoH",
+                  "name": "fCruisingText",
+                  "fill": "$text-primary",
+                  "content": "Cruising",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wUkhj",
+          "name": "postsSection",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "TSHZg",
+              "name": "sectionTitle",
+              "fill": "$text-primary",
+              "content": "All Posts",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "vJt4S",
+              "name": "postsGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yR6XN",
+                  "name": "colLeft",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "id": "WQ8pH",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card1",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 0,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Disney"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Cruising"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Our First Disney Cruise"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "October 12, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "A magical first cruise aboard the Disney Fantasy..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "gVCsc",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card3",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 483,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Running"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Beach"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Running in Paradise"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "September 14, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Training for a half marathon while soaking up the Florida sun..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "RiV9b",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card5",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 966,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Beach"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Travel"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Summer Beach Vibes"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "August 2, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Sun, sand, and surf — our favorite beach spots this summer..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "tswbx",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card7",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 1449,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Concerts"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Family"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Concert Season Kicks Off"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "June 22, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Now that the nest is empty, concert season hits different..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "k749I",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card9",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 1932,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Family"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Travel"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Empty Nest, Full Hearts"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "May 15, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "The house is quiet but our adventures are just beginning..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YjvPH",
+                  "name": "colRight",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "id": "CXouv",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card2",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 0,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Disney"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Travel"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Disney Springs Date Night"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "October 5, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "When the kids are grown, Disney Springs becomes date night..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "uoFV7",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card4",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 483,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Travel"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Beach"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "St. Kitts Adventure"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "September 1, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Island hopping in the Caribbean — a trip we'll never forget..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "u64uF",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card6",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 966,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Travel"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Beach"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Florida Road Trip Gems"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "July 18, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Hidden beaches and small-town charm along the Gulf Coast..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "VUQgn",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card8",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 1449,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Cruising"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Travel"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Cruising the Caribbean"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "June 5, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Our second cruise — this time just the two of us..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    },
+                    {
+                      "id": "IcVg5",
+                      "type": "ref",
+                      "ref": "Dd2ml",
+                      "width": "fill_container",
+                      "name": "card10",
+                      "height": "fit_content",
+                      "x": 0,
+                      "y": 1932,
+                      "descendants": {
+                        "2Yww2": {
+                          "width": "fill_container"
+                        },
+                        "LLHOl": {
+                          "width": "fill_container",
+                          "height": "fit_content"
+                        },
+                        "rK2cJ/EqojJ": {
+                          "content": "Family"
+                        },
+                        "i2ALi/EqojJ": {
+                          "content": "Beach"
+                        },
+                        "Ukdcc": {
+                          "width": "fill_container",
+                          "content": "Welcome to Rocking the Nest"
+                        },
+                        "pJGuR": {
+                          "y": 98,
+                          "content": "April 28, 2018"
+                        },
+                        "TtHlt": {
+                          "width": "fill_container",
+                          "y": 128,
+                          "content": "Hi! We're Maggie and Brad, and this is our journey..."
+                        },
+                        "3nYFx": {
+                          "y": 164
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uX3Ai",
+          "type": "ref",
+          "ref": "Br3fq",
+          "name": "blogFooter",
+          "x": 0,
+          "y": 2912
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "k3nXu",
+      "x": 3080,
+      "y": 1275,
+      "name": "About Page",
+      "width": 1440,
+      "fill": "$surface-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "pN7RU",
+          "type": "ref",
+          "ref": "YvtsA",
+          "name": "aboutNav",
+          "x": 0
+        },
+        {
+          "type": "frame",
+          "id": "yWk9m",
+          "name": "aboutHero",
+          "width": "fill_container",
+          "fill": "$surface-inverse",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            60,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "8NMb4",
+              "name": "aboutTitle",
+              "fill": "$text-light",
+              "content": "ABOUT US",
+              "textAlign": "center",
+              "fontFamily": "Playfair Display",
+              "fontSize": 42,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "k0hsv",
+              "name": "aboutSub",
+              "fill": "$accent-secondary",
+              "content": "Meet Maggie & Brad",
+              "textAlign": "center",
+              "fontFamily": "Nunito",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mhmE0",
+          "name": "photoSection",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "vZDg0",
+              "name": "photoFrame",
+              "width": 500,
+              "height": 400,
+              "fill": "$accent-secondary",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cnHw6",
+                  "name": "photoLabel",
+                  "opacity": 0.7,
+                  "fill": "$text-light",
+                  "content": "Maggie & Brad\nSt. Kitts",
+                  "textAlign": "center",
+                  "fontFamily": "Nunito",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xXwaW",
+              "name": "bioContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HPg4Y",
+                  "name": "bioHeading",
+                  "fill": "$text-primary",
+                  "content": "Our Story",
+                  "fontFamily": "Josefin Sans",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "rcnPD",
+                  "name": "bioPara1",
+                  "fill": "$text-primary",
+                  "content": "We're Maggie and Brad — married, empty nesters, and firm believers that getting older is inevitable but being old is not. When our kids flew the nest, we decided to fill it with adventures instead of silence.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Nunito",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "n12qp",
+                  "name": "bioPara2",
+                  "fill": "$text-primary",
+                  "content": "From Disney cruises to Florida beaches, concert road trips to half-marathon finish lines — we're out here proving that the best chapters come after the kids leave.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Nunito",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "cwKKR",
+                  "name": "bioAccent",
+                  "width": 60,
+                  "height": 4,
+                  "fill": "$accent-primary",
+                  "cornerRadius": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GU25o",
+          "name": "lovesSection",
+          "width": "fill_container",
+          "fill": "$surface-secondary",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "aI8bf",
+              "name": "lovesTitle",
+              "fill": "$text-primary",
+              "content": "What We Love",
+              "fontFamily": "Josefin Sans",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "q4GxR",
+              "name": "lovesGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bQlBb",
+                  "name": "love1",
+                  "width": "fill_container",
+                  "fill": "$surface-primary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "3oPCg",
+                      "name": "love1Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "sun",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d6Wkn",
+                      "name": "love1Title",
+                      "fill": "$text-primary",
+                      "content": "Beach Life",
+                      "textAlign": "center",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4NuMc",
+                      "name": "love1Desc",
+                      "opacity": 0.7,
+                      "fill": "$text-primary",
+                      "content": "Florida beaches are our happy place",
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4MelA",
+                  "name": "love2",
+                  "width": "fill_container",
+                  "fill": "$surface-primary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "k5WK5",
+                      "name": "love2Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "ship",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HkfnZ",
+                      "name": "love2Title",
+                      "fill": "$text-primary",
+                      "content": "Cruising",
+                      "textAlign": "center",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jmz4c",
+                      "name": "love2Desc",
+                      "opacity": 0.7,
+                      "fill": "$text-primary",
+                      "content": "Exploring the world from the open water",
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XDCFr",
+                  "name": "love3",
+                  "width": "fill_container",
+                  "fill": "$surface-primary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ktqez",
+                      "name": "love3Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "music",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lQHdV",
+                      "name": "love3Title",
+                      "fill": "$text-primary",
+                      "content": "Live Music",
+                      "textAlign": "center",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XmhsD",
+                      "name": "love3Desc",
+                      "opacity": 0.7,
+                      "fill": "$text-primary",
+                      "content": "Concerts are better without a babysitter curfew",
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U8S5T",
+                  "name": "love4",
+                  "width": "fill_container",
+                  "fill": "$surface-primary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "yaq2y",
+                      "name": "love4Icon",
+                      "width": 40,
+                      "height": 40,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LH3NO",
+                      "name": "love4Title",
+                      "fill": "$text-primary",
+                      "content": "Disney",
+                      "textAlign": "center",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XkFUd",
+                      "name": "love4Desc",
+                      "opacity": 0.7,
+                      "fill": "$text-primary",
+                      "content": "You're never too old for the Magic Kingdom",
+                      "textAlign": "center",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "yuv8d",
+          "type": "ref",
+          "ref": "Br3fq",
+          "name": "aboutFooter",
+          "x": 0,
+          "y": 1142
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "f7bQS",
+      "x": 4620,
+      "y": 1275,
+      "name": "Contact Page",
+      "width": 1440,
+      "fill": "$surface-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "YUCV0",
+          "type": "ref",
+          "ref": "YvtsA",
+          "name": "contactNav",
+          "x": 0
+        },
+        {
+          "type": "frame",
+          "id": "COUfQ",
+          "name": "contactHero",
+          "width": "fill_container",
+          "fill": "$surface-inverse",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            60,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "V7CfY",
+              "name": "contactTitle",
+              "fill": "$text-light",
+              "content": "GET IN TOUCH",
+              "textAlign": "center",
+              "fontFamily": "Playfair Display",
+              "fontSize": 42,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "1fAOG",
+              "name": "contactSub",
+              "fill": "$accent-secondary",
+              "content": "We'd love to hear from you!",
+              "textAlign": "center",
+              "fontFamily": "Nunito",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dDDMG",
+          "name": "formSection",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "y0GQC",
+              "name": "formCard",
+              "width": "fill_container",
+              "fill": "$surface-secondary",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kTCA5",
+                  "name": "formTitle",
+                  "fill": "$text-primary",
+                  "content": "Send Us a Message",
+                  "fontFamily": "Josefin Sans",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "9JtjO",
+                  "name": "nameRow",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Vc1Hm",
+                      "name": "nameLabel",
+                      "fill": "$text-primary",
+                      "content": "Name *",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kDMxt",
+                      "name": "nameInput",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$surface-primary",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lTB7D",
+                          "name": "namePlace",
+                          "opacity": 0.4,
+                          "fill": "$text-primary",
+                          "content": "Your name",
+                          "fontFamily": "Nunito",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aM9Ru",
+                  "name": "emailRow",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "778aC",
+                      "name": "emailLabel",
+                      "fill": "$text-primary",
+                      "content": "Email *",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gk9dZ",
+                      "name": "emailInput",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$surface-primary",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1lya1",
+                          "name": "emailPlace",
+                          "opacity": 0.4,
+                          "fill": "$text-primary",
+                          "content": "your@email.com",
+                          "fontFamily": "Nunito",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I6r3d",
+                  "name": "phoneRow",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y6GI7",
+                      "name": "phoneLabel",
+                      "fill": "$text-primary",
+                      "content": "Phone",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gmyCF",
+                      "name": "phoneInput",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$surface-primary",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t3CcW",
+                          "name": "phonePlace",
+                          "opacity": 0.4,
+                          "fill": "$text-primary",
+                          "content": "(optional)",
+                          "fontFamily": "Nunito",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UStv0",
+                  "name": "msgRow",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uqXbh",
+                      "name": "msgLabel",
+                      "fill": "$text-primary",
+                      "content": "Message *",
+                      "fontFamily": "Nunito",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bOozE",
+                      "name": "msgInput",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$surface-primary",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "11ZnU",
+                          "name": "msgPlace",
+                          "opacity": 0.4,
+                          "fill": "$text-primary",
+                          "content": "Tell us what's on your mind...",
+                          "fontFamily": "Nunito",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sP8cP",
+                  "name": "submitBtn",
+                  "fill": "$accent-primary",
+                  "cornerRadius": 8,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LU81t",
+                      "name": "submitText",
+                      "fill": "$text-light",
+                      "content": "SEND MESSAGE",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.05
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "9ZOwz",
+              "name": "sidePanel",
+              "width": 400,
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Tx2rk",
+                  "name": "infoCard",
+                  "width": "fill_container",
+                  "fill": "$surface-secondary",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XymoT",
+                      "name": "infoTitle",
+                      "fill": "$text-primary",
+                      "content": "Say Hello",
+                      "fontFamily": "Josefin Sans",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xpo4G",
+                      "name": "infoText",
+                      "fill": "$text-primary",
+                      "content": "Whether you want to share your own empty-nester story, suggest a travel spot, or just say hi — we're all ears!",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Nunito",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aj7E3",
+                      "name": "emailInfo",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "B5tHf",
+                          "name": "emailIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "$accent-secondary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9pBEu",
+                          "name": "emailText",
+                          "fill": "$text-primary",
+                          "content": "maggie@rockingthenest.com",
+                          "fontFamily": "Nunito",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mkzLQ",
+                  "name": "photoCard",
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": "$accent-secondary",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lcL81",
+                      "name": "photoLabel",
+                      "opacity": 0.7,
+                      "fill": "$text-light",
+                      "content": "Maggie & Brad",
+                      "fontFamily": "Nunito",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "krs3n",
+          "type": "ref",
+          "ref": "Br3fq",
+          "name": "contactFooter",
+          "x": 0,
+          "y": 1024
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-primary": {
+      "type": "color",
+      "value": "#E8825E"
+    },
+    "accent-secondary": {
+      "type": "color",
+      "value": "#4AADA6"
+    },
+    "border-dark": {
+      "type": "color",
+      "value": "#164350"
+    },
+    "border-light": {
+      "type": "color",
+      "value": "#E0D5C5"
+    },
+    "surface-inverse": {
+      "type": "color",
+      "value": "#1B4D5C"
+    },
+    "surface-primary": {
+      "type": "color",
+      "value": "#FFF9F0"
+    },
+    "surface-secondary": {
+      "type": "color",
+      "value": "#F0E6D6"
+    },
+    "text-light": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#6B7B76"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#2C3E3A"
+    }
+  }
+}
