@@ -121,7 +121,7 @@ Fun, energetic, adventurous. Two empty nesters refusing to slow down — travel,
 ## Known Issues
 
 - **favicon.ico**: Default Next.js favicon still present. Delete after icon.svg is confirmed working.
-- **Blog post params**: `[slug]/page.tsx` uses synchronous `params` — may need async update for Next.js 16.
+- **Blog post params**: `[slug]/page.tsx` updated to async `params` for Next.js 16 compatibility (2026-04-09).
 - **Forms**: ContactForm submission method needs verification (Formspree or mailto fallback).
 - **WordPress**: rockingthenest.com still points to old WordPress site. DNS cutover pending.
 - **Placeholder hero**: san-antonio-concert-weekend uses placeholder hero image (triggers gradient fallback). Needs real photo.

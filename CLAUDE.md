@@ -47,7 +47,7 @@
 
 ## Known Issues
 - Default favicon.ico needs deletion (icon.svg replaces it)
-- Blog post [slug] uses old sync params pattern
+- Blog post [slug] updated to async params for Next.js 16 (2026-04-09)
 - WordPress still live at rockingthenest.com
 - ContactForm submission method needs verification
 - san-antonio-concert-weekend uses placeholder hero image (needs real photo)
