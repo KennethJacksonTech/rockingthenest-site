@@ -86,6 +86,86 @@ export const posts: Post[] = [
 <p><strong>I Heart Mexico Beach!</strong></p>`,
   },
   {
+    slug: "san-antonio-concert-weekend",
+    title: "San Antonio Concert Weekend",
+    date: "2018-09-10",
+    categories: ["Concerts", "Travel"],
+    heroImage: "/images/placeholder-concert.jpg",
+    excerpt:
+      "The second we heard two of our favorite bands were touring – TOGETHER – we were stoked! Def Leppard and Journey in the same concert! We found a concert date on a Friday night in San Antonio, perfect!",
+    content: `<p>The second we heard two of our favorite bands were touring &ndash; TOGETHER &ndash; we were stoked! Def Leppard and Journey in the same concert!</p>
+
+<p>We immediately started looking for dates that would work with Brad&rsquo;s schedule and give us a cool little mini vacay. We found a concert date on a Friday night in San Antonio, perfect!</p>
+
+<p>San Antonio is one of our favorite cities to visit so we got to work planning our San Antonio concert weekend. It had to be a quick up and back trip since we were leaving for Florida the next weekend.</p>
+
+<p>So, with the Prius loaded we hit the road on Friday morning at 5 AM. The goal? Make it to the hotel by early afternoon to get in a little pool time.</p>
+
+<h2>The Hotel</h2>
+
+<p>Our home away from home for the weekend was the Hotel Indigo on San Antonio&rsquo;s Riverwalk. This oh-so-cute boutique hotel was the perfect spot for a weekend getaway. The hotel is located on the Museum Reach of the Riverwalk, a quieter section of the river but within walking distance to the shops and restaurants.</p>
+
+<p>The hotel lobby had a fresh, modern vibe. Love the glass tile wall and the teal and orange furniture!</p>
+
+<p>We didn&rsquo;t get a chance to eat at the hotel while we were here. However, they had a great looking menu and loads of choices at the snack bar.</p>
+
+<p>These wall-sized flower murals were all over the hotel. This bed, however, was super comfy.</p>
+
+<p>Our room had a sweet little kitchenette with a sink, Keurig and real mugs!! And we loved having the mini fridge for leftovers, great for a snack after getting back late from the concert.</p>
+
+<p>We did make it in time for some pool lounging. And it had a great view of the river.</p>
+
+<h2>The Concert</h2>
+
+<p>Journey and Def Leppard rocked our socks off!! We came to San Antonio primarily for this concert, and the bands did not disappoint. All of these guys are well into their 50&rsquo;s and still had the energy and stamina to pull off a fantastic show.</p>
+
+<p>Everything was great! The crowd, the music, the lights, and the sound. I don&rsquo;t know if it was the venue or the sound guy, but the volume was just right! We could hear after the concert, no annoying ear ringing for days!</p>
+
+<p>Yes, our seats were way high up. But as you can see we were happy campers, and we had a perfect view of the stage.</p>
+
+<h2>The Riverwalk</h2>
+
+<p>When in Rome, am I right? On this trip, we were total tourists and the most touristy thing to do in San Antonio is going to the Riverwalk.</p>
+
+<p>The river shuttle stops right outside the hotel and will take you to the Riverwalk or up the Museum Reach. Our butts needed a break and our legs needed stretching, so we decided to walk.</p>
+
+<p>We had our sights on the Go Rio Riverboat tour because, well we had never done it and it sounded like the thing to do. Tickets weren&rsquo;t outrageous, and we could grab a margarita for the ride. Win and Win!</p>
+
+<p>The tour was fun; we saw some fantastic architecture and learned about the history of San Antonio and the river.</p>
+
+<p><strong>Fun Fact!</strong> The Riverwalk is drained every six years for cleaning. They discover all kinds of stuff at the bottom. Sunglasses, keys, toys. But do you know what they find the most? Silverware!</p>
+
+<h2>The Food</h2>
+
+<p>Two things the Riverwalk is not short on &ndash; food and drink.</p>
+
+<p>The Lonestar Cafe&rsquo;s Happy Hour called out to us, so we headed up for fruity margaritas and half-priced appetizers. We sat upstairs for a view of the river and cooled off with the misters and fans.</p>
+
+<p>Troy, our waiter, gave us some great tips on things to do on our next visit. Thanks, Troy! Excellent service and yummy drinks.</p>
+
+<p>On the boat tour, we discovered that the first restaurant to offer riverside dining was the Original Mexican Restaurant Bar &amp; Grill. So, of course, we had to check it out.</p>
+
+<p>They serve up some serious Tex-Mex and killer Dos-Ritas. Good thing we are on foot!</p>
+
+<p>Down the road a way, on I-35 south of SA, we discovered a great local restaurant right off the highway &ndash; The Route 35 Diner. We stopped here for a quick breakfast the morning after the concert.</p>
+
+<p>No small, dinky breakfast burritos here!</p>
+
+<h3>The Church</h3>
+
+<p>Before ending our San Antonio concert weekend, we wanted to check out a local church recommended by one of our kids. Crossbridge Community Church has a reputation of having a great worship leader, Bryan McCleery.</p>
+
+<p>Bryan and the worship team were amazing! And Pastor Kirk delivered a great sermon. Everyone here is super-friendly &ndash; my kind of church!</p>
+
+<p>Great way to end the weekend!</p>
+
+<h3>A terrific weekend!</h3>
+
+<p>Saw two of my favorite bands, in one of my favorite cities with my favorite guy!</p>
+
+<p>As we started home, we were already making plans to come back.</p>`,
+  },
+  {
     slug: "south-florida-again",
     title: "South Florida Again!",
     date: "2018-09-20",
@@ -586,4 +666,5 @@ export const allCategories = [
   "Running",
   "Family",
   "Cruising",
+  "Concerts",
 ];

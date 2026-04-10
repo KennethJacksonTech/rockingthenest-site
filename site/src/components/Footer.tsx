@@ -70,10 +70,18 @@ export default function Footer() {
       <div className="border-t border-border-dark">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-text-muted text-xs">
-            Made in Amarillo, Texas by KennethJackson.Tech
+            &copy; {new Date().getFullYear()} Rocking The Nest
           </p>
           <p className="text-text-muted text-xs">
-            &copy; 2024 Rocking The Nest
+            Made in Amarillo, Texas by{" "}
+            <a
+              href="https://kennethjackson.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-light/50 hover:text-text-light transition-colors"
+            >
+              KennethJackson.Tech
+            </a>
           </p>
         </div>
       </div>

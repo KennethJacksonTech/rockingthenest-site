@@ -22,6 +22,16 @@ export const metadata: Metadata = {
   title: "Rocking The Nest — Adventures in Empty Nesting",
   description:
     "Travel, Disney, Concerts & Life After the Kids — a blog by Maggie & Brad Grice",
+  metadataBase: new URL("https://www.rockingthenest.com"),
+  openGraph: {
+    title: "Rocking The Nest — Adventures in Empty Nesting",
+    description:
+      "Travel, Disney, Concerts & Life After the Kids — a blog by Maggie & Brad Grice",
+    url: "https://www.rockingthenest.com",
+    siteName: "Rocking The Nest",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
