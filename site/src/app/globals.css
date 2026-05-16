@@ -25,6 +25,20 @@
   --gradient-sunset: linear-gradient(135deg, #E8825E 0%, #D4694A 100%);
 }
 
+/* — SiteKit GonzoForm CSS-var compat (added 2026-05-15) — */
+:root {
+  --color-bg: #FFFFFF;
+  --color-text: var(--text-primary);
+  --color-text-secondary: var(--text-primary);
+  --color-text-dim: var(--text-muted);
+  --color-primary: var(--accent-primary);
+  --color-form-border: var(--border-light);
+  --color-form-border-focus: var(--accent-primary);
+  --color-border: var(--border-light);
+  --color-surface: var(--surface-secondary);
+  --color-error: #dc2626;
+}
+
 @theme inline {
   --color-surface-primary: var(--surface-primary);
   --color-surface-secondary: var(--surface-secondary);

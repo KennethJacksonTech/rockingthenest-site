@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import ContactForm from "@/components/ContactForm";
+import { getForm, GONZO_API_BASE, GONZO_ORG_SLUG } from "@/lib/gonzo";
+import GonzoForm from "@/components/gonzo-form";
 
 export const metadata: Metadata = {
   title: "Contact | Rocking the Nest",
   description: "Get in touch with Rocking the Nest.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const form = await getForm("contact");
+
   return (
     <>
       {/* Hero */}
@@ -23,7 +26,24 @@ export default function ContactPage() {
       <section className="bg-surface-primary py-16 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Form */}
-          <ContactForm />
+          {form ? (
+            <GonzoForm
+              form={form}
+              apiBase={GONZO_API_BASE}
+              orgSlug={GONZO_ORG_SLUG}
+            />
+          ) : (
+            <p className="font-body text-text-primary leading-relaxed">
+              Our online form is temporarily unavailable. Please email{" "}
+              <a href="mailto:maggie@rockingthenest.com" className="text-accent-primary hover:underline">
+                maggie@rockingthenest.com
+              </a>{" "}or{" "}
+              <a href="mailto:brad@rockingthenest.com" className="text-accent-primary hover:underline">
+                brad@rockingthenest.com
+              </a>
+              {" "}and we&rsquo;ll get back to you.
+            </p>
+          )}
 
           {/* Info Card */}
           <div className="bg-surface-secondary rounded-lg p-8">
